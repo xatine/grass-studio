@@ -1,0 +1,312 @@
+/* GLOBAL */
+body {
+  padding: 0;
+  margin: 0;
+  color: #575756;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.21px;
+  overflow: auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+button {
+  background: transparent;
+  border: none;
+  outline: none; }
+
+/* GRID */
+.container {
+  max-width: 1134px;
+  width: 100%;
+  margin: 0 auto; }
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 1000px; } }
+  @media (max-width: 1054px) {
+    .container {
+      max-width: 800px; } }
+  @media (max-width: 834px) {
+    .container {
+      max-width: 600px; } }
+  @media (max-width: 664px) {
+    .container {
+      max-width: 400px; } }
+  @media (max-width: 464px) {
+    .container {
+      max-width: 300px; } }
+
+.heading {
+  color: #627478;
+  font-family: "Open Sans";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: 0.81px;
+  padding-bottom: 61px; }
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 1210px) {
+    header {
+      display: none; } }
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  top: 76px;
+  background: transparent;
+  position: absolute;
+  align-content: center; }
+.header__logo {
+  display: block;
+  color: #000000;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 0.6px; }
+
+/* MENU */
+.menu__items li {
+  margin-right: 66px; }
+.menu__items li:last-child {
+  margin-right: 0; }
+
+ul {
+  background: transparent;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  text-transform: uppercase; }
+
+li {
+  background: transparent;
+  display: block;
+  float: left;
+  position: relative;
+  text-decoration: none; }
+  li a {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 800; }
+  li:focus-within {
+    opacity: 0.9; }
+  li:last-child {
+    margin-left: auto; }
+  li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: -20px;
+    display: none;
+    border-radius: 7px;
+    background: #dfdede;
+    padding: 15px 0;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35); }
+    li ul li {
+      text-decoration: none;
+      width: 100%;
+      margin-right: 0; }
+      li ul li:hover {
+        border-bottom: 0px;
+        opacity: 0.7; }
+    li ul a {
+      color: #000000;
+      font-weight: 700;
+      font-size: 25px;
+      letter-spacing: 0.35px; }
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  text-align: center;
+  z-index: 1; }
+
+/* HERO */
+.hero {
+  background-image: url("./assets/seacost.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 761px; }
+  .hero__container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 329px 140px 0 0; }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff; }
+  .hero__heading {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 63.84px;
+    letter-spacing: 0.6px;
+    max-width: 403px; }
+  .hero__description {
+    display: flex;
+    align-items: flex-start;
+    font-size: 21px;
+    font-weight: 400;
+    padding-top: 30px;
+    letter-spacing: 0.1px; }
+    .hero__description p {
+      width: 238px;
+      padding-right: 39px; }
+
+.button {
+  padding: 5px 30px;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  background: transparent;
+  border: 3px solid #ffffff;
+  transition: 0.3s ease-in-out; }
+  .button:hover {
+    background: #ffffff;
+    color: #627478; }
+  .button--dark {
+    border: 3px solid #53686c;
+    color: #627478; }
+    .button--dark:hover {
+      background: #53686c;
+      color: #ffffff; }
+
+/* ABOUT */
+.about__container {
+  padding: 100px 0 93px; }
+.about__text {
+  display: flex; }
+  .about__text p + p {
+    padding-left: 44px; }
+  @media (max-width: 674px) {
+    .about__text {
+      flex-direction: column; }
+      .about__text p + p {
+        padding-left: 0;
+        padding-top: 24px; } }
+
+/* TRIPS */
+.trips {
+  background-color: #f9f9f9; }
+  .trips__container {
+    padding: 100px 0 57px; }
+  .trips__paragraph {
+    margin-bottom: 35px;
+    text-align: left; }
+    .trips__paragraph img {
+      float: left;
+      margin-right: 39px;
+      margin-bottom: 35px; }
+    @media (max-width: 1054px) {
+      .trips__paragraph {
+        flex-direction: column; }
+        .trips__paragraph img {
+          display: none; } }
+  .trips__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 44px; }
+
+/* GALLERY */
+.gallery {
+  position: relative; }
+  .gallery__container {
+    max-width: 100%;
+    margin: auto;
+    padding: 113px 0 82px; }
+  .gallery__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px; }
+    .gallery__items img {
+      width: 100%;
+      transition: 0.5s ease-in-out; }
+      .gallery__items img:hover {
+        opacity: 0.7; }
+
+/* LIGHTBOX */
+#modal {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  overflow: hidden; }
+
+.modal__container {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+.modal__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .modal__item img {
+    width: 946px;
+    height: 545px; }
+.modal__close {
+  cursor: pointer;
+  padding-bottom: 33px;
+  transition: 0.5s ease-in-out; }
+  .modal__close:hover {
+    opacity: 0.5; }
+
+.fade {
+  opacity: 0.2; }
+
+/* FOOTER */
+footer {
+  padding: 30px 0;
+  background: #535353;
+  color: #fffefe;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  font-weight: 300; }
+
+/*# sourceMappingURL=main.css.map */

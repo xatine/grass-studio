@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Grass Studio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header__container">
+        <a href="#" class="header__logo">Grass Studio</a>
+        <nav role="navigation">
+          <ul class="menu__items">
+            <li><a href="#about">About</a></li>
+            <li>
+              <a href="#trips" aria-haspopup="true">Trips</a>
+              <ul aria-label="submenu">
+                <li><a href="#">Trip 1</a></li>
+                <li><a href="#">Trip 2</a></li>
+                <li><a href="#">Trip 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+              <ul aria-label="submenu">
+                <li><a href="#">Iceland</a></li>
+                <li><a href="#">Norway</a></li>
+                <li><a href="#">Arctica</a></li>
+                <li><a href="#">Alaska</a></li>
+              </ul>
+            </li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            Outdoor Photography is a Journey
+          </h1>
+          <div class="hero__description">
+            <p>We spent three months exploring Iceland</p>
+            <a href="#" class="button">Check it</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__container">
+        <h2 class="heading">Section title</h2>
+        <div class="about__text">
+          <p>
+            Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+            vulputate , ligula lacinia celerisque tempor, lacus lacus ornare
+            ante. Ac egestas est urna sit amet arcu. consequat posuere.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere. Nulla facilisi. Duis aliquet egestas purus in blandit.
+            Curabitur vulputate , ligula lacinia celerisque tempor, lacus lacus.
+          </p>
+          <p>
+            Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+            vulputate, ligula lacinia celerisque tempor, lacus lacus ornare
+            ante. Egestas est urna sit amet arcu. consequat posuere. Vestibulum
+            ante ipsum primis in faucibus orci luctus et ultrices posuere. Nulla
+            facilisi. Duis aliquet egestas purus in blandit. Curabitur
+            vulputate, ligula lacinia celerisque tempor, lacus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trips" id="trips">
+      <div class="container trips__container">
+        <h2 class="heading">Another title</h2>
+        <p class="trips__paragraph">
+          <img src="assets/trip.jpg" alt="Trip" />
+          Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+          vulputate , ligula lacinia celerisque tempor, lacus lacus ornare ante.
+          Ac egestas est urna sit amet arcu. consequat posuere. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere. Nulla
+          facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate ,
+          ligula lacinia celerisque tempor, lacus lacus ornare ante.
+        </p>
+        <p class="trips__paragraph">
+          This is how a link looks like. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Sed molestie
+          augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in
+          faucibus la lacinia celerisque tempor, lacus lacus ornare ante.
+        </p>
+        <p class="trips__paragraph">
+          Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur
+          vulputate , ligula lacinia celerisque tempor, lacus lacus ornare ante.
+          Ac egestas est urna sit amet arcu. consequat posuere. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere. Nulla
+          facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate ,
+          ligula lacinia celerisque tempor, lacus lacus ornare ante.
+        </p>
+        <p class="trips__paragraph">
+          This is how a link looks like. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Sed molestie
+          augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in
+          faucibus la lacinia celerisque tempor, lacus lacus ornare ante orci
+          luctus et ultrices posuere.Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Sed molestie
+          augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere.
+        </p>
+        <span class="trips__more">
+          <a href="#" class="button button--dark">
+            Read more
+          </a></span
+        >
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <div class="modal__container" id="modal">
+          <div class="modal__item">
+            <button class="modal__close" id="close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="37">
+                <path
+                  d="M2.852 36.222l14.604-15.243 14.695 15.243 2.359-2.54-14.605-15.153L34.51 3.375 32.15.835 17.456 16.17 2.852.835l-2.45 2.54L15.098 18.53.402 33.682z"
+                />
+              </svg>
+            </button>
+            <img src="#" id="modalImage" />
+          </div>
+        </div>
+
+        <div class="gallery__items">
+          <img src="assets/slide1.jpg" />
+          <img src="assets/slide2.jpg" />
+          <img src="assets/slide3.jpg" />
+          <img src="assets/slide4.jpg" />
+          <img src="assets/slide5.jpg" />
+          <img src="assets/slide6.jpg" />
+          <img src="assets/slide7.jpg" />
+          <img src="assets/slide8.jpg" />
+          <img src="assets/slide9.jpg" />
+        </div>
+      </div>
+    </section>
+    <!-- <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <div class="gallery__item" onclick="openModal();toSlide(1)">
+          <img src="assets/slide1.jpg" alt="Beach sea coast." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(2)">
+          <img src="assets/slide2.jpg" alt="Grass field farm." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(3)">
+          <img src="assets/slide3.jpg" alt="Horses." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(4)">
+          <img src="assets/slide4.jpg" alt="Landscape sea coast mountain." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(5)">
+          <img src="assets/slide5.jpg" alt="Landspace horses." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(6)">
+          <img src="assets/slide6.jpg" alt="Church Iceland" />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(7)">
+          <img src="assets/slide7.jpg" alt="Landscape ocean mountain." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(8)">
+          <img src="assets/slide8.jpg" alt="Sea coast ocean bird." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="gallery__item" onclick="openModal();toSlide(9)">
+          <img src="assets/slide9.jpg" alt="Landspace horizon mountain." />
+          <div class="gallery__item--overlay">
+            <span>+</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="lightbox" class="modal">
+        <div class="modal__container">
+          <span class="modal__close" id="close">
+            <img src="assets/close.svg" class="modal__close--icon" />
+          </span> -->
+    <!-- <button class="modal__close" id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="37">
+              <path
+                d="M2.852 36.222l14.604-15.243 14.695 15.243 2.359-2.54-14.605-15.153L34.51 3.375 32.15.835 17.456 16.17 2.852.835l-2.45 2.54L15.098 18.53.402 33.682z"
+              />
+            </svg>
+          </button>
+          <div class="modal__content">
+            <div class="modal__slide">
+              <img src="assets/slide1.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide2.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide3.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide4.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide5.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide6.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide7.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide8.jpg" class="modal__slide--image" />
+            </div>
+            <div class="modal__slide">
+              <img src="assets/slide9.jpg" class="modal__slide--image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <footer>
+      <div class="container">
+        <p>All rights reserved Grass Studio 2019</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
